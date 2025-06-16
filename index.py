@@ -1,8 +1,10 @@
+# bloque regular para definir variables 
 nombresclientes = []
 listclient = {}
 valueFinalTotal = 0
 cantidad_clientes = int(input("Ingrese la cantidad de clientes: "))
 print("--" * 20)
+# bloque para saber cuantos clientes son 
 for i in range(cantidad_clientes):
     listclient[i] = {}
     nombre = input("Ingrese el nombre del cliente: ")
@@ -10,6 +12,7 @@ for i in range(cantidad_clientes):
     nombresclientes.append(nombre)
     print("--" * 20)
     cantidad = int(input("cuantos productos escogio el cliente: "))
+    # loop para calcular el valor final del cliente
     for a in range (cantidad):
         print(" " )
         nameProducto = input("como se llama el producto: ")
@@ -23,6 +26,7 @@ for i in range(cantidad_clientes):
         print(" " )
         listclient[i][nameProducto] = valueTotal  
         print("*" * 10)
+        # validador para poder enviar el mensaje de como va la cuenta
         if(a + 1 == cantidad):
             print(" " )
             print("tu cuenta total es de: " + str(sum(listclient[i].values())))
@@ -33,14 +37,14 @@ for i in range(cantidad_clientes):
             print(" " )
         print("*" * 10)
     print("--" * 20)
-
+# desenglose de caja total despues de todos los clientes
 for b in range(len(listclient)):
     valueFinal = sum(listclient[b].values())
     valueFinalTotal += valueFinal
     if b + 1 == len(listclient):
         print("Total de compra de todos los clientes " + str(valueFinalTotal))
         print(" " )
-
+# anuncio de cliente con la venta mayor 
 if len(listclient) == 1:
     print("El cliente con la mayor compra es " + nombresclientes[0])
 else:
