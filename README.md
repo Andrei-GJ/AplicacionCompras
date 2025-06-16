@@ -2,6 +2,8 @@
 ## proyecto hecho con los siguientes requerimientos
 
 > [!TIP]
+Estos son los requerimientos de la tarea
+
 - [x] tener la posibilidad de que se pueda aplicar la compra para N clientes(*)  
 
 - [x] Que cada cliente pueda llevar N cantidad de productos diferentes
@@ -13,4 +15,4 @@
 - [x] Que se pueda saber cual fue el total de  compra mas alta dentro de todos los clientes que compraron.
 
 > [!NOTE]
-Definision del problema para este caso se requiere que el sistema en este caso este mismo tiene como proposito tener en cuenta un listado de compra de x cantidad de clientes con un valor al que ya se le incluyo el iva y a su ves al final de la fila de clientes a atender se debe tener en cuenta cual fue el cliente que mas compro y cual es el desenglose del valor en caja por lo mismo se nesesita recorrer la cantidad de clientes que hubo y decidirlo mendiantes de loop
+Para este caso se requiere que el sistema tenga como propósito manejar un listado de compras de X cantidad de clientes, con un valor al que ya se le incluyó el IVA. A su vez, al final de la fila de clientes a atender, se debe tener en cuenta cuál fue el cliente que más compró y cuál es el desglose del valor en caja. Por lo mismo, se necesita recorrer la cantidad de clientes que hubo y determinarlo mediante loops.
